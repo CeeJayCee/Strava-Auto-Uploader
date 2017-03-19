@@ -13,7 +13,7 @@ now=dt.datetime.now()
 last_run=dt.datetime.fromtimestamp(os.stat('/home/pi/garmin_last_run').st_mtime)
 ago=now-last_run
 
-os.environ["ACCESS_TOKEN"] = ''
+os.environ["ACCESS_TOKEN"] = 'INSERT_ACCESS_TOKEN_HERE'
 
 print("Finding files")
 for root,dirs,files in os.walk('/media/usb/GARMIN/ACTIVITY/'):
