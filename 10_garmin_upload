@@ -1,0 +1,3 @@
+#!/bin/bash
+touch /home/pi/running
+python /home/pi/garmin_upload.py 2>&1 > /home/pi/log
