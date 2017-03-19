@@ -23,7 +23,7 @@ for root,dirs,files in os.walk('/media/usb/GARMIN/ACTIVITY/'):
                 mtime = dt.datetime.fromtimestamp(st.st_mtime)
                 if mtime > last_run:
                         print("Found file: " + fname)
-                        call(["python", "/home/pi/stravalib/stravaup.py", "-t", ".fit", "-P", "-E", "True", path])
+                        call(["python", "/home/pi/stravacli/stravaup.py", "-t", ".fit", "-P", "-E", "True", path])
 
 print("Touching last run")
 call(["touch", "/home/pi/garmin_last_run"])
